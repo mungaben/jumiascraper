@@ -7,11 +7,30 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 
+# scrape jumia products from jumia website 
+# scrape kilimall products from kilimall website
+#compare the two
+#get product difference 
+
 
 def Homeview(request):
 
     return render(request, 'jumia/home.html')
   
+def Downloadproducts(requests):
+    
+    return render(requests, 'jumia/products.html')
+
+def getcategories(request):
+    
+    return render(requests, 'jumia/categories.html')
+
+
+def getsubcategories(request):
+      
+     
+    
+    return render(requests, 'jumia/subcategories.html')
 
 def download(request):
 
